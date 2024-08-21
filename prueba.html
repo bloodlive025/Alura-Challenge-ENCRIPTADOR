@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+        <header class="header">
+            <img class="header__imagen" src="./img/Logo.png" alt="Es un logo de alura">
+        </header>
+        <main class="presentacion">
+            <section class="presentacion__box1">
+                <div class="presentacion__box1__container">
+                    <textarea class="presentacion__texto" type="text" placeholder="Ingrese el texto aqui" id="textoAEncriptar" ></textarea>    
+                </div>
+                <div>
+                    <img class="presentacion__box1__imagen" src="./img/Frame 1.png" alt="solo minuscula y mayusculas">
+                </div>
+                <div class="container__botones">
+                    <button onclick="encriptar();"  class="container__boton1" id="encriptar">Encriptar</button>
+                    <button onclick="desencriptar();" class="container__boton2" id="desencriptar" >Desencriptar</button>
+                </div>
+            </section>
+            <div class="presentacion__box2B">
+                <textarea class="presentacion__box2__texto" type="text" id="textoAEvaluar"></textarea>    
+                <button onclick="copiarTexto();" class="container__boton3" id="copiar">Copiar</button>
+            </div>
+        </main>
+
+        <script src="app.js" defer></script>
+</body>
+</html>
